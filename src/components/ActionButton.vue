@@ -1,17 +1,14 @@
 <template>
   <div @click.prevent="action" class="button-container">
-    <p>{{ label }}</p>
+    <a
+      ><p>{{ label }}</p></a
+    >
   </div>
 </template>
 
 <script>
 export default {
   name: "ActionButton",
-  data() {
-    return {
-      msg: "Welcome to Your Vue.js App",
-    };
-  },
   props: {
     label: "",
     action: "",
@@ -21,19 +18,16 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1,
-h2 {
-  font-weight: normal;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
+.button-container {
+  border: solid green;
+  color: green;
+  border-radius: 10px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  cursor: pointer;
+  max-height: 50px;
+  min-width: 100px;
 }
 </style>

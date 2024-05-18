@@ -1,35 +1,36 @@
 <template>
   <div class="menu-container">
-    <MenuContainer />
-    </div>
+    <MenuContainer v-if="openMenu" @openAccountCreationTab="handleOpenAccountCreationTab"/>
+    <CreateAnAccount v-if="openAccountContainer" />
+  </div>
 </template>
 
 <script>
-  import MenuContainer from "@/components/MenuContainer.vue";
+import MenuContainer from "@/components/MenuContainer.vue";
+import CreateAnAccount from "@/components/CreateAnAccount.vue";
 
-  export default {
-    name: "MainContainer",
-    components: {
-      MenuContainer,
+export default {
+  name: "MainContainer",
+  components: {
+    MenuContainer,
+    CreateAnAccount,
+  },
+  data() {
+    return {
+      openMenu: true,
+      openAccountContainer: false,
+    };
+  },
+  methods: {
+    handleOpenAccountCreationTab() {
+      this.openMenu = false;
+      this.openAccountContainer = true;
     },
-  };
+  },
+};
 </script>
 
-    <!-- Add "scoped" attribute to limit CSS to this component only -->
-    <style scoped>
-      h1,
-      h2 {
-        font-weight: normal;
-      }
-      ul {
-        list-style-type: none;
-        padding: 0;
-      }
-      li {
-        display: inline-block;
-        margin: 0 10px;
-      }
-      a {
-        color: #42b983;
-      }
-    </style>
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped>
+
+</style>
