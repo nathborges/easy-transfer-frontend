@@ -8,24 +8,20 @@
 
 <script>
 export default {
-  name: "ActionButton",
+  name: 'ActionButton',
   props: {
-    label: "",
-    action: "",
-  },
+    label: { type: String, default: '' },
+    action: { type: Function }
+  }
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .button-container {
-  border: solid green;
+  border: solid 1px green;
   color: green;
   border-radius: 10px;
-  padding-top: 1px;
-  padding-bottom: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 16px;
   cursor: pointer;
   max-height: 50px;
   min-width: 100px;

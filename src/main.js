@@ -1,14 +1,11 @@
-// The Vue build version to load with the `import` command
-// (runtime-only or standalone) has been set in webpack.base.conf with an alias.
-import Vue from 'vue'
-import VueTailwind from 'vue-tailwind'
-import App from './App'
+import './assets/main.css'
 
-Vue.config.productionTip = false
+import { createApp } from 'vue'
+import App from './App.vue'
+import router from './router'
 
-/* eslint-disable no-new */
-new Vue({
-  el: '#app',
-  components: { App },
-  template: '<App/>'
-}).use(VueTailwind)
+const app = createApp(App)
+
+app.use(router)
+
+app.mount('#app')

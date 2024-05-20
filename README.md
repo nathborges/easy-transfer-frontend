@@ -1,26 +1,35 @@
-# EasyTransfer Frontend
+# easy-transfer-frontend
 
-# NÃO FINALIZADO
+This template should help get you started developing with Vue 3 in Vite.
 
-Link do repositório do backend: https://github.com/nathborges/easy-transfer-backend
+## Recommended IDE Setup
 
+[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
 
-> A Vue.js project
+## Customize configuration
 
-## Build Setup
+See [Vite Configuration Reference](https://vitejs.dev/config/).
 
-``` bash
-# install dependencies
+## Project Setup
+
+```sh
 npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+### Compile and Hot-Reload for Development
+
+```sh
+npm run dev
+```
+
+### Compile and Minify for Production
+
+```sh
+npm run build
+```
+
+### Lint with [ESLint](https://eslint.org/)
+
+```sh
+npm run lint
+```

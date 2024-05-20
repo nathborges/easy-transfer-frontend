@@ -7,7 +7,7 @@
 
 <script>
 import MenuContainer from "@/components/MenuContainer.vue";
-import CreateAnAccount from "@/components/CreateAnAccount.vue";
+import CreateAnAccount from "@/views/CreateAnAccount.vue";
 
 export default {
   name: "MainContainer",
