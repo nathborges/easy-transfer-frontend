@@ -1,19 +1,17 @@
-# EasyTransfer
+# EasyTransferFrontend
+O EasyTransfer é uma aplicação de transferência de valores entre as contas. O seu propósito é ajudar as pessoas se organizarem financeiramente, conseguirem transferir valores entre contas de forma rápida e fácil.
 
-## Sobre
-
-O EasyTransfer é um webapp de transferência de valores entre as contas. O seu propósito é ajudar as pessoas se organizarem financeiramente, conseguirem transferir valores entre contas de forma rápida e fácil.
+Link do backend: https://github.com/nathborges/easy-transfer-backend
 
 ## O que o usuário pode fazer
 
 O usuário pode criar uma conta, depositar um valor em sua conta e transferir livremente para outras contas que existem.
 
-## How to run
-Clone the repository and inside project folder, you must run `npm i && npm run serve` on the terminal and access the Hidrosaver, by default, on http://localhost:8080/
-
+## Como executar
 Clone o repositório. Dentro da pasta root do projeto, caso você tenha o gerenciandor de versão nvm, use `nvm use`. Seu computador irá usar a versão 20.11.0 do node, que é a versão recomendada pra rodar o projeto.
 Caso você não tenha o nvm instalado em seu computador, instale a versão 20.11.0.
-Após se certificar de estar rodando o node certo, use `npm i && npm run dev`.
+Inicie o [backend](https://github.com/nathborges/easy-transfer-backend) em sua máquina. E se certifique que o arquivo .env dentro do frontend está apontando devidamente para a url do backend iniciado.
+Após se certificar de estar rodando o node certo para o projeto, use `npm i && npm run dev`. O EasyTransferFrontend, como default, estará rodando no http://localhost:5173/
 
 ## Tecnologias usadas
 
@@ -32,6 +30,13 @@ Após se certificar de estar rodando o node certo, use `npm i && npm run dev`.
    <a><img src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white" alt="SASS"/></a>
 
 </div>
+
+## Próximos passos
+- Testes unitários.
+- Criar um sistema de login seguro para o usuário.
+- Mostrar o status da transferência.
+- Logs de erro para o usuário entender quando houver erro na transferência ou na criação de conta, por exemplo.
+- Tirar os dados do localStorage.
 
 
 ## Descrição dos dados
