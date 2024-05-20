@@ -15,8 +15,6 @@ Após se certificar de estar rodando o node certo para o projeto, use `npm i && 
 
 ## Tecnologias usadas
 
-### Front-end
-
 ---
 
  <div style="display:flex">
@@ -31,14 +29,14 @@ Após se certificar de estar rodando o node certo para o projeto, use `npm i && 
 
 </div>
 
+
+## Descrição dos dados
+
+Todos dados do usuário, como número de conta, cpf, nome, são salvados no localStorage dentro do webBrowser. Sei que não é uma boa prática, até por estar salvando dados sensíveis do usuário, mas foi a forma que achei rápida de conseguir salvar o usuário que está logado. Pretendo melhorar isso.
+
 ## Próximos passos
 - Testes unitários.
 - Criar um sistema de login seguro para o usuário.
 - Mostrar o status da transferência.
 - Logs de erro para o usuário entender quando houver erro na transferência ou na criação de conta, por exemplo.
 - Tirar os dados do localStorage.
-
-
-## Descrição dos dados
-
-Todos dados do usuário, como número de conta, cpf, nome, são salvados no localStorage dentro do webBrowser. Sei que não é uma boa prática, até por estar salvando dados sensíveis do usuário, mas foi a forma que achei rápida de conseguir salvar o usuário que está logado. Pretendo melhorar isso.
