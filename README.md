@@ -25,7 +25,6 @@ Após se certificar de estar rodando o node certo para o projeto, use `npm i && 
    <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS">
    <img src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white" alt="CSS"/>
   </a>
-   <a><img src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white" alt="SASS"/></a>
 
 </div>
 
